@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>JJ Quality Assurance</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel='stylesheet' id='royal-fontawesome-css'  href='https://blog.jjfoodservice.com/wp-content/themes/Royal-2/css/libs/font-awesome.min.css?ver=4.9.8' type='text/css' media='all' />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: url('http://www.fordings.com/images/background-images/paleo.jpg');
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 40px;
+    text-align: center;
+    background: burlywood;
+}
+
+h2 {
+
+      color: brown;
+      text-align: center;
+}
+
+.image img {
+
+border-radius: 8px;
+
+  }
+
+
+.header h1 {
+    font-size: 30px;
+    color: brown;
+}
+
+.fa {
+  padding: 12px;
+  font-size: 20px;
+  width: 40px;
+  text-align: left;
+  text-decoration: none;
+  margin: 3px 1px;
+  border-radius: 40%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: brown;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: transparent;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: transparent;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: burlywood;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: burlywood;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  color: #8b0000;
+  width: 60%;
+  
+  font-size: 2em;
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+
+
+</style>
+</head>
+<body >
+<p id="demo"></p>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+
+<div class="header">
+     <h1></h1>
+    <p class="item-1">JJ FOOD SERVICE LIMITED</p>
+    
+<p class="item-2">FWD GOLD MEDAL  AWARD FOR DIGITAL INNOVATION</p>
+
+<p class="item-3">OWN-LABEL LINES</p>
+    
+  <h2></h2>
+</div>
+
+<div class="topnav">
+  <a href="https://www.jjfoodservice.com/#search/%5Bb%5Djj%7Cjj">JJ Food Service</a>
+  <a href="https://blog.jjfoodservice.com/">JJ Blog</a>
+  <a href="#">Branches to Visit</a>
+ <a href="https://jjfamily.rewardgateway.co.uk/">JJ Family</a>
+  <a href="#" style="float:right">Search</a>
+
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>OUR TEAM</h2>
+      <h5> 5th December 2018</h5>
+    <div class="image">
+    <center>
+<img src="https://i1.wp.com/blog.jjfoodservice.com/wp-content/uploads/2018/02/healthiereating-cantten.jpg?resize=1024%2C689&ssl=1" width="200">
+
+<img src="https://i1.wp.com/blog.jjfoodservice.com/wp-content/uploads/2018/12/JJ-Family-ELIT-05.jpg?resize=1024%2C840&ssl=1" width="200">
+
+<img src="https://i2.wp.com/blog.jjfoodservice.com/wp-content/uploads/2018/12/Screen-Shot-2018-12-04-at-11.46.39-1.png?resize=1024%2C676&ssl=1" width="200">
+
+<img src="https://i1.wp.com/blog.jjfoodservice.com/wp-content/uploads/2018/12/Screen-Shot-2018-12-04-at-11.46.28.png?resize=1024%2C676&ssl=1" width="200">
+</center>
+     </div>
+
+
+      <h2><strong>OUR 3Oth ANNIVERSARY</strong></h2>
+      <p>National wholesaler JJ Foodservice is celebrating its 30th birthday this month and, as it looks ahead to the future, believes that environmentally friendly menu items will drive growth in foodservice.
+
+The way we have been eating is simply not sustainable, said group CEO Mustafa Kiamil.
+
+The greenhouse gases released by agriculture and livestock are becoming increasingly well publicised in the media, together with the damaging effect of global warming on fish. The result is a dramatic change in eating out habits. Caterers must adapt, the wholesaler said.</p>
+    </div>
+    <div class="card">
+      <h2>TAKEAWAYS MUST EMBRACE SOCIAL MEDIA TO  THRIVE IN 2019</h2>
+      <h5>5th December 2018</h5>
+     
+      <p>Takeaways must be brilliant at promoting themselves on Facebook and Instagram to bolster sales in the year ahead, according to new findings from JJ Foodservice company, FOODit.
+
+Social media accounted for more than 35,000 visitors on takeaway websites built by FOODit in the past year, and 25,000 worth of sales, a 52% increase on the previous year.</p>
+<center>
+<div class="image">
+<img src="https://i1.wp.com/blog.jjfoodservice.com/wp-content/uploads/2018/11/Yida-Sushi-Instagram-1.jpg?w=960&ssl=1" width="600">
+</div>
+</center>
+
+<h2>JJ FOOD VIDEOS</h2>
+
+<center>
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/EvTtY0fUbPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/jIxzl3nP5t0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="200" height="200" src="https://www.youtube.com/embed/9eYpaRELpnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center>
+    </div>
+  </div>
+
+
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>ABOUT US</h2>
+<center>
+      <div class="image">
+    
+<img src="https://blog.jjfoodservice.com/wp-content/uploads/2018/05/JJ-FOOD-SERVICE-LOGO-NEW-2018-01.jpg" width="200">
+
+</div>
+</center>
+      <p>As a leading wholesales, storage and distribution company in food service sector we will aim to continue to grow nationally whilst operating a progressive and profitable business.
+JJ Food Service Limited will meet its obligations to store and distribute to its customers, products that meet all industry standards.
+The company is committed to provide customers with quality products in an excellent condition, sourced from reputable suppliers, with a high level of service.
+We are committed to satisfy all applicable regulations, develop and implement the quality management system and continually monitor and improve its effectiveness.
+Business objectives established in line with these policies will be reviewed regularly.
+To achieve these goals we will train and develop our staff to progress within the company and enable their skills to improve the organisations performance.
+<strong>Mustafa Kiamil
+CEO JJ Food Service Limited</strong>.</p>
+    </div>
+    <div class="card">
+      <h2>Popular Post</h2>
+      <h3>JJ Family: How to claim your NEW Company Discounts</h3>
+      <p>It is a family thing.
+
+The new scheme is totally free to use and our way of saying You are Awesome! to our employees. The jjfamily.org platform is for JJ Foodservice employees only and includes discounts, cash backs and other deals at places like Tesco, Asda, Dominos, Apple Store, Argos, Starbucks, Superdrug, John Lewis, AA, IKEA, B&Q, Cineworld, TUI and much, much more! Here are three easy steps to access your deals:
+
+Activate your account via the email sent to you today
+Visit https://jjfamily.org
+Sign in with your email address and start shopping!
+If you can not find the email please do check your spam, clutter and junk folders. If still no luck, then reach out to humanresources@jjfoodservice.com.</p>
+    </div>
+    <div class="card">
+      <h2>Follow JJ</h2>
+     
+<a href="https://www.facebook.com/jjfoodservice" class="fa fa-facebook"></a>
+<a href="https://twitter.com/jjfoodservice" class="fa fa-twitter"></a>
+<a href="https://www.linkedin.com/company/jj-food-service-limited" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/channel/UCt4UlV3a_3DW_-Zlrqn9EVQ" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/jj_food_service/" class="fa fa-instagram"></a> 
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+<h2>https://www.jjfoodservice.com/</h2><br>
+<strong>Created by: Segundo Bartra</strong>
+</footer>
+
+</body>
+</html>
+
